@@ -1,0 +1,110 @@
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: "Geologica-400";
+  src: url("/fonts/Geologica-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geologica-500";
+  src: url("/fonts/Geologica-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geologica-600";
+  src: url("/fonts/Geologica-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geologica-700";
+  src: url("/fonts/Geologica-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-400";
+  src: url("/fonts/Inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #16161a;
+  color: #fffffe;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fffffe;
+}
+
+p {
+  color: #94a1c4;
+}
+
+a {
+  color: #7f5af0;
+}
+
+button,
+.btn {
+  background-color: #7f5af0;
+  color: #fffffe;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #5f36c5;
+}
+
+/* Additional styling for sections, headers, etc. */
+header,
+footer,
+section {
+  margin: 20px 0;
+}
+
+header h1 {
+  font-size: 32px;
+  font-family: "Geologica-700", sans-serif;
+}
+
+header h2 {
+  font-size: 20px;
+  font-family: "Geologica-600", sans-serif;
+}
+
+section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Geologica-500", sans-serif;
+}
+
+section h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "Geologica-400", sans-serif;
+}
+
+section p {
+  margin-bottom: 15px;
+  font-family: "Inter", sans-serif;
+}
