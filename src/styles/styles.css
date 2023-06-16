@@ -44,6 +44,11 @@ body {
   color: #fffffe;
 }
 
+.container {
+  min-height: 100vh;
+  margin: 5.625rem;
+}
+
 h1,
 h2,
 h3,
@@ -75,36 +80,57 @@ button:hover,
   background-color: #5f36c5;
 }
 
-/* Additional styling for sections, headers, etc. */
-header,
-footer,
 section {
-  margin: 20px 0;
+  margin: 5.625rem 0;
 }
 
-header h1 {
-  font-size: 32px;
+h1 {
   font-family: "Geologica-700", sans-serif;
+  font-size: calc(2vw + 2vh + 1vmin);
 }
 
-header h2 {
-  font-size: 20px;
+h2 {
   font-family: "Geologica-600", sans-serif;
+  font-size: calc(1.5vw + 1.5vh + 0.8vmin);
 }
 
-section h3 {
-  font-size: 24px;
+h3 {
   margin-bottom: 10px;
   font-family: "Geologica-500", sans-serif;
+  font-size: calc(1.2vw + 1.2vh + 0.6vmin);
 }
 
-section h4 {
-  font-size: 18px;
+h4 {
   margin-bottom: 5px;
   font-family: "Geologica-400", sans-serif;
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 
-section p {
+p {
   margin-bottom: 15px;
   font-family: "Inter", sans-serif;
+  font-size: calc(0.8vw + 0.8vh + 0.4vmin);
 }
+
+footer {
+  margin: 8rem 0;
+}
+
+/*
+Viewport units (vw, vh, vmin) represent a percentage of the viewport's width, height, or the minimum of the two. 
+They enable us to create font sizes relative to the screen size.
+
+Using calc(), calculations are performed with CSS values, combining different units. Here, font sizes for 
+elements are calculated using vw, vh, and vmin units within calc().
+
+The coefficients (e.g., 0.8vw, 1.5vh) determine the scaling factor for each unit, allowing control over their 
+impact on the final font size.
+
+By adding the vw, vh, and vmin values together, the resulting combined calculation considers the viewport's width 
+and height.
+
+This calculated result represents the font size in CSS units (e.g., px, rem), which is then applied to the 
+respective element.
+
+As the viewport width or height changes, the font size is recalculated, ensuring proportional scaling of the text.
+*/
