@@ -62,22 +62,11 @@ p {
 
 a {
   color: #7f5af0;
+  text-decoration: none;
 }
 
-button,
-.btn {
-  background-color: #7f5af0;
-  color: #fffffe;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
+a:hover {
   cursor: pointer;
-}
-
-button:hover,
-.btn:hover {
-  background-color: #5f36c5;
 }
 
 section {
